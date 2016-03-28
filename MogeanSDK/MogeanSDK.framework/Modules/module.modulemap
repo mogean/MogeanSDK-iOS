@@ -1,0 +1,10 @@
+framework module MogeanSDK {
+  umbrella header "MogeanSDK.h"
+
+  export *
+  module * { export * }
+}
+
+module MogeanSDK.Swift {
+    header "MogeanSDK-Swift.h"
+}
