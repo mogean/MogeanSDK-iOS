@@ -111,7 +111,7 @@ s.author             = { "Reid Maulsby" => "reid@mogean.com" }
 s.platform     = :ios
 
 
-s.source       = { :git => "https://github.com/mogean/MogeanSDK-iOS.git", :tag => "0.0.2" }
+s.source       = { :git => "https://github.com/mogean/MogeanSDK-iOS.git", :tag => "0.0.3" }
 s.source_files  = 'MogeanSDK/MogeanSDK.framework/Headers/*.h'
 s.vendored_frameworks = 'MogeanSDK/MogeanSDK.framework'
 s.ios.deployment_target = '8.0'
