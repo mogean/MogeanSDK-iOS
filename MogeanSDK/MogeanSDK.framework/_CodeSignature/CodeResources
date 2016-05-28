@@ -6,47 +6,47 @@
 	<dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
 		<data>
-		gXutMw/UTNqeLzJLrY+06pnVT+0=
+		wcBjJWxLL3H4XN7n8Ve8SzEQNNQ=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
-		+/cNUPu7b96fyixUXrHbvDZIiO0=
+		3fcTcMMy/fepp1Dl5H0iF8wtKXs=
 		</data>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
 		<data>
-		lZiUBaeVYNYfNy7Y+NjK+/hdLws=
+		JvL+4y+qXCRLoSuCC9Sl0sSDkis=
 		</data>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
 		<data>
-		2EfkgxwtnTLTLL1daI8Akw6DBJ8=
+		XCdZrjbTT5uAQ/Dh6JQMrffq5CQ=
 		</data>
 		<key>Frameworks/libswiftCoreLocation.dylib</key>
 		<data>
-		v2CMyh2FVZFVAQIGCRrNkuAnFwM=
+		1zvzPQZLhoDec6SzI2j/ERBRTuY=
 		</data>
 		<key>Frameworks/libswiftDarwin.dylib</key>
 		<data>
-		nw6vrb1XvP23GZpy5ZlvaF+ZzF4=
+		Wp2n4BlCpM7HoFM9qqfcTRzacLk=
 		</data>
 		<key>Frameworks/libswiftDispatch.dylib</key>
 		<data>
-		ZQZwB9htn5D0CB/jUNE+izF6VAU=
+		Ac31/Vh49NJ+ST3JA2bxGLzcF94=
 		</data>
 		<key>Frameworks/libswiftFoundation.dylib</key>
 		<data>
-		2oL/9kkKiEIClZr0eZH6ovzZRuM=
+		yLpFoDt0QY0K1mxma/ozHdjB468=
 		</data>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
 		<data>
-		y+JeJX7oq4ZOrVtbQ3CrjnenMhk=
+		imDeT0ueLhFOf1GsQZTIGqLmFuk=
 		</data>
 		<key>Frameworks/libswiftUIKit.dylib</key>
 		<data>
-		SxIls+A2bDwfrIbDfh1eqSc1dLE=
+		9Ii8RdZjMfvtdw8dJFIrACAsNa0=
 		</data>
 		<key>Headers/MogeanSDK-Swift.h</key>
 		<data>
-		ZEq4IwEFtsizC94i7P+HOb071WQ=
+		xPXUqvvrgIhKU+iozlH761HZOTQ=
 		</data>
 		<key>Headers/MogeanSDK.h</key>
 		<data>
@@ -54,23 +54,23 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QrWKgFXm1ik2y7nQy2i2CQrEtqw=
+		ejU+Z4UZA/1aEIPxq8C89ijGUEc=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
-		Tvffre/3pKi5DC+P8y82QJ400Hc=
+		WSUEmO5ipUKiJwlTO3v/z5PIsuQ=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		6SVsmXDLzc/QMxYvsZTIeEB9Vfo=
+		tP9rS1qUPPjJYWV8cujyMxhEDtQ=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
-		PdPTfGajdTyWpPYAIlAy655qnOw=
+		b7HaNwrOTvXmCkzNr15zHPBzUH4=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		FUOyr5TFoBV9moTqqbqe/KT1omY=
+		eYq5Ig1iB3kZ9msSNS2ShyjoBvo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -84,77 +84,203 @@
 	<key>files2</key>
 	<dict>
 		<key>Frameworks/libswiftContacts.dylib</key>
-		<data>
-		gXutMw/UTNqeLzJLrY+06pnVT+0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			wcBjJWxLL3H4XN7n8Ve8SzEQNNQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			F3tC0MlGgx16ceUdDkUNzOhdDQ5F6Q2+46Te9DCzYTo=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
-		<data>
-		+/cNUPu7b96fyixUXrHbvDZIiO0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			3fcTcMMy/fepp1Dl5H0iF8wtKXs=
+			</data>
+			<key>hash2</key>
+			<data>
+			EVOllNi+ynjoNG87SXldVJclJKcp+D8nH2MRQ7Fy0oM=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCoreGraphics.dylib</key>
-		<data>
-		lZiUBaeVYNYfNy7Y+NjK+/hdLws=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			JvL+4y+qXCRLoSuCC9Sl0sSDkis=
+			</data>
+			<key>hash2</key>
+			<data>
+			F/J25BghK8xy5lmEad235pAYt6vqHo3p97owX/mvoUI=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCoreImage.dylib</key>
-		<data>
-		2EfkgxwtnTLTLL1daI8Akw6DBJ8=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			XCdZrjbTT5uAQ/Dh6JQMrffq5CQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			Cr+tT7ddjrQ2XP3pd9aWzo6BWnKeCakHZ1Uo8lPSEgY=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftCoreLocation.dylib</key>
-		<data>
-		v2CMyh2FVZFVAQIGCRrNkuAnFwM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			1zvzPQZLhoDec6SzI2j/ERBRTuY=
+			</data>
+			<key>hash2</key>
+			<data>
+			DtiPlq83Zi3cSjqlSL7Cf9eMopfU9ipg03qGNElyKVY=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftDarwin.dylib</key>
-		<data>
-		nw6vrb1XvP23GZpy5ZlvaF+ZzF4=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Wp2n4BlCpM7HoFM9qqfcTRzacLk=
+			</data>
+			<key>hash2</key>
+			<data>
+			/DDRyMG+L49Dpqz9TIy2xsCDanWLbUgJjXxYQ1a+Y8U=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftDispatch.dylib</key>
-		<data>
-		ZQZwB9htn5D0CB/jUNE+izF6VAU=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			Ac31/Vh49NJ+ST3JA2bxGLzcF94=
+			</data>
+			<key>hash2</key>
+			<data>
+			kt5MIhZJZMDZM56ovVmaioEPWZF4SZejGC33GzYGtmA=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftFoundation.dylib</key>
-		<data>
-		2oL/9kkKiEIClZr0eZH6ovzZRuM=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			yLpFoDt0QY0K1mxma/ozHdjB468=
+			</data>
+			<key>hash2</key>
+			<data>
+			vOwPO8JLRYo1Xxlg8LquEgtLhclJfpMp1DRUjSay6J8=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftObjectiveC.dylib</key>
-		<data>
-		y+JeJX7oq4ZOrVtbQ3CrjnenMhk=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			imDeT0ueLhFOf1GsQZTIGqLmFuk=
+			</data>
+			<key>hash2</key>
+			<data>
+			niXjdgt482nrmzRkhy90dQPR67HcQ75z+fXJchQK0wU=
+			</data>
+		</dict>
 		<key>Frameworks/libswiftUIKit.dylib</key>
-		<data>
-		SxIls+A2bDwfrIbDfh1eqSc1dLE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			9Ii8RdZjMfvtdw8dJFIrACAsNa0=
+			</data>
+			<key>hash2</key>
+			<data>
+			uno1k61BYewNK/vmXlCF25BeK5kMFFfgjgvj99+IjAA=
+			</data>
+		</dict>
 		<key>Headers/MogeanSDK-Swift.h</key>
-		<data>
-		ZEq4IwEFtsizC94i7P+HOb071WQ=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			xPXUqvvrgIhKU+iozlH761HZOTQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			wp/NBxKBWAT/SlfdOrhFPIHhQImA1IfIurF/SeUAa0M=
+			</data>
+		</dict>
 		<key>Headers/MogeanSDK.h</key>
-		<data>
-		3Qfu6lros/n7psGgOrdG+58EEEg=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			3Qfu6lros/n7psGgOrdG+58EEEg=
+			</data>
+			<key>hash2</key>
+			<data>
+			rA43B+juMKj+ZHBUguWkD5Zt9UPqyBzKhqRKiWsDpqo=
+			</data>
+		</dict>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftdoc</key>
-		<data>
-		Tvffre/3pKi5DC+P8y82QJ400Hc=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			WSUEmO5ipUKiJwlTO3v/z5PIsuQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			n3jQUpTjJ1XyROclw6ippxUw7JxhIjWIDeYC5VTtwgQ=
+			</data>
+		</dict>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftmodule</key>
-		<data>
-		6SVsmXDLzc/QMxYvsZTIeEB9Vfo=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			tP9rS1qUPPjJYWV8cujyMxhEDtQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			10Sul0yEziomQP8ngauGgmSAg5mADMwv38NhLzb4pPQ=
+			</data>
+		</dict>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
-		<data>
-		PdPTfGajdTyWpPYAIlAy655qnOw=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			b7HaNwrOTvXmCkzNr15zHPBzUH4=
+			</data>
+			<key>hash2</key>
+			<data>
+			mC7g3EGbpGNWq62KLk3earKx02XVOstvAHM92toiZok=
+			</data>
+		</dict>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftmodule</key>
-		<data>
-		FUOyr5TFoBV9moTqqbqe/KT1omY=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			eYq5Ig1iB3kZ9msSNS2ShyjoBvo=
+			</data>
+			<key>hash2</key>
+			<data>
+			UDGsiCnZTVsUix9dleecbDUZ5k577JSyQbO70ZK/FdI=
+			</data>
+		</dict>
 		<key>Modules/module.modulemap</key>
-		<data>
-		UH51BJMhbS6dii/XkTAzJxGBEaE=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			UH51BJMhbS6dii/XkTAzJxGBEaE=
+			</data>
+			<key>hash2</key>
+			<data>
+			WehVJTFvuw8sD+VyampwSR9NMxSUxRnRCvKejsdTveE=
+			</data>
+		</dict>
 		<key>Mogean.podspec</key>
-		<data>
-		pZx1DzoyTgJaraPAIy0R+dvP6+0=
-		</data>
+		<dict>
+			<key>hash</key>
+			<data>
+			pZx1DzoyTgJaraPAIy0R+dvP6+0=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZHGysgDP0R1pogI0CTK3U+wYDJ5GAOp26z4bX3a7TvU=
+			</data>
+		</dict>
 	</dict>
 	<key>rules</key>
 	<dict>
