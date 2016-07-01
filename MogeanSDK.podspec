@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "MogeanSDK"
-s.version      = "0.0.8"
+s.version      = "0.0.9"
 s.summary      = "Understand your users based on physical cookies. Leverage our network of beacons and sensors"
 
 
@@ -111,7 +111,7 @@ s.author             = { "Reid Maulsby" => "reid@mogean.com" }
 s.platform     = :ios
 
 
-s.source       = { :git => "https://github.com/mogean/MogeanSDK-iOS.git", :tag => "0.0.8" }
+s.source       = { :git => "https://github.com/mogean/MogeanSDK-iOS.git", :tag => "0.0.9" }
 s.source_files  = 'MogeanSDK/MogeanSDK.framework/Headers/*.h'
 s.vendored_frameworks = 'MogeanSDK/MogeanSDK.framework'
 s.ios.deployment_target = '8.0'
