@@ -28,40 +28,43 @@ Step-2: Drag and Drop MogeanSDK.framework into your workspace.
 #Section - C: Using MogeanSDK
 
 Instructions using Swift
-In your App Delegate, import MogeanSDK 
-import Mogean
+In your App Delegate, import MogeanSDK:
+
+	import MogeanSDK
 
 Create a Shared Instance by calling: 
-let mogeanSharedInstance:Mogean = Mogean.sharedInstance 
 
-In your didFinishLaunchingWithOptions function, initialize Mogean by setting the MogeanID, comsumerKey and Secret
-mogeanSharedInstance.peelID = "<Your MogeanID Issued by Mogean>"
-mogeanSharedInstance.mogeanConsumerKey="<Your Mogean Consumer Key Here>"
-mogeanSharedInstance.mogeanConsumerSecret="<Your Mogean Consumer Secret Here>"
+	let mogeanSharedInstance:Mogean = Mogean.sharedInstance 
 
-You can send Custom Event Types during App Launch, App Background and App Exit. To do this, please call
-mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppLaunch.rawValue)
-mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppBackground.rawValue)
+In your didFinishLaunchingWithOptions function, initialize Mogean by setting the MogeanID, and consumerKey
+
+	mogeanSharedInstance.peelID = "<Your MogeanID Issued by Mogean>"
+	mogeanSharedInstance.mogeanConsumerKey="<Your Mogean Consumer Key Here>"
+
+
+You can send Custom Event Types during App Launch, App Background and App Exit. To do this, please call:
+	mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppLaunch.rawValue)
+	mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppBackground.rawValue)
 or
-mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppExit.rawValue)
+	mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppExit.rawValue)
 
 Instructions using Objective-C
 
 In your AppDelegate.h
-@import MogeanSDK;
+	@import MogeanSDK;
 and then 
-@property (strong, nonatomic) Mogean *mogean;
+	@property (strong, nonatomic) Mogean *mogean;
 
 
 In your AppDelegate.m
 	
 	Mogean *mogean = [Mogean sharedInstance];
     
-    mogean.peelID = @"<Your MogeanID Issued by Mogean>";
-    mogean.mogeanConsumerKey=@"<Your Mogean Consumer Key Issued by Mogean>";
-    mogean.mogeanConsumerSecret=@"<Your Mogean Consumer Secret Issued by Mogean>";
+	mogean.peelID = @"<Your MogeanID Issued by Mogean>";
+	mogean.mogeanConsumerKey=@"<Your Mogean Consumer Key Issued by Mogean>";
 
+# Section - D: Final Instructions
 
-In your info.plist file, be sure to give a proper message for "NSLocationAlwaysUsageDescription" key
+In your info.plist file, be sure to add key "NSLocationAlwaysUsageDescription" and give a proper message string description for your users when requesting for Location Always Usage authorization.
 
 You are ready to use Your MogeanSDK Now. 
