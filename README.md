@@ -29,7 +29,7 @@ Step-2: Drag and Drop MogeanSDK.framework into your workspace.
 
 #Section - C: Using MogeanSDK
 
-Instructions using Swift
+##Instructions using Swift
 In your App Delegate, import MogeanSDK:
 
 	import MogeanSDK
@@ -53,7 +53,7 @@ or
 
 	mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppExit.rawValue)
 
-Instructions using Objective-C
+##Instructions using Objective-C
 
 In your AppDelegate.h
 	
