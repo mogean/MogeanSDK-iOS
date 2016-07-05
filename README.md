@@ -43,16 +43,22 @@ In your didFinishLaunchingWithOptions function, initialize Mogean by setting the
 
 
 You can send Custom Event Types during App Launch, App Background and App Exit. To do this, please call:
+
 	mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppLaunch.rawValue)
 	mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppBackground.rawValue)
+
 or
+
 	mogeanSharedInstance.setCustomEvent(MogeanEventTypes.AppExit.rawValue)
 
 Instructions using Objective-C
 
 In your AppDelegate.h
+	
 	@import MogeanSDK;
+	
 and then 
+
 	@property (strong, nonatomic) Mogean *mogean;
 
 
