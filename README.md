@@ -6,18 +6,20 @@ $ pod init
 ## Step-2: Integrate MogeanSDK Pod into Pod file. 
 MogeanSDK is available as a private pod. Open your Podfile and add the following Sources 
 
-source 'https://github.com/CocoaPods/Specs.git' 
-source 'https://github.com/mogean/MogeanSDKPodSpec'
+	source 'https://github.com/CocoaPods/Specs.git' 
+	source 'https://github.com/mogean/MogeanSDKPodSpec'
 
 Add Target MogeanSDK and your podfile will look something like this: 
 
-target 'AppTargetName' 
-do 
-pod 'MogeanSDK' 
-end
+	target 'AppTargetName' 
+	do 
+	pod 'MogeanSDK' 
+	end
 
 ## Step-3: Install MogeanSDK 
-$ pod install 
+
+	$ pod install 
+
 MogeanSDK is now integrated in your App. Make sure you close your XCode and reopen the project using .xcworkspace
 
 #Section - B: Without using CocoaPod
@@ -69,8 +71,23 @@ In your AppDelegate.m
 	mogean.peelID = @"<Your MogeanID Issued by Mogean>";
 	mogean.mogeanConsumerKey=@"<Your Mogean Consumer Key Issued by Mogean>";
 
-# Section - D: Final Instructions
+# Section - D: Location Authorization Instructions
 
 In your info.plist file, be sure to add key "NSLocationAlwaysUsageDescription" and give a proper message string description for your users when requesting for Location Always Usage authorization.
 
 You are ready to use Your MogeanSDK Now. 
+
+# Section - E: Submitting to App Store
+
+The MogeanSDK utilizes iOS Advertising Identifier (IDFA). During the App Store submission process you will need to answer "Yes" to this question. The MogeanSDK does comply with the usage limitations of the Advertising Identifier and the Limit Ad Tracking setting.
+
+After answering "Yes" that the app uses the IDFA, then select the following options below:
+
+	DO NOT SELECT - Serve advertisements within the app
+
+Note: the above setting should not be selected based on the MogeanSDK functionality, but if your app currently already does use the IDFA for purposes of serving advertisements within the app, then you should select this option.
+	
+	SELECT - Attribute this app installation to a previously served advertisement
+	SELECT - Attribute an action taken within this app to a previously served advertisement
+
+You will then SELECT the final checkbox about the Limit Ad Tracking setting in iOS. The MogeanSDK does monitor this setting by the end user and is taken into account during data processing and delivery to ensure compliance.
