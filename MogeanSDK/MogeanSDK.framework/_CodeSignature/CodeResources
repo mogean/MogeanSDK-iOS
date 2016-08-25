@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MogeanSDK-Swift.h</key>
 		<data>
-		xPXUqvvrgIhKU+iozlH761HZOTQ=
+		AdepOGv71x3t2agsh9X6DEAlPUA=
 		</data>
 		<key>Headers/MogeanSDK.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		dJwg7a4t0o/PxckYOr2mIdu0XT0=
+		9S9fybV3219NQFgJrYGbIsvVWeY=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		81TIQ7qpkKPhR4S5EXr9ChwD12w=
+		M/ut8uBLaouNOqvfX9bBWGrFfEI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -43,11 +43,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xPXUqvvrgIhKU+iozlH761HZOTQ=
+			AdepOGv71x3t2agsh9X6DEAlPUA=
 			</data>
 			<key>hash2</key>
 			<data>
-			wp/NBxKBWAT/SlfdOrhFPIHhQImA1IfIurF/SeUAa0M=
+			Efuil31jrh7sYHxql84j5m2cKyHtqhhV9kICWWEuK30=
 			</data>
 		</dict>
 		<key>Headers/MogeanSDK.h</key>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dJwg7a4t0o/PxckYOr2mIdu0XT0=
+			9S9fybV3219NQFgJrYGbIsvVWeY=
 			</data>
 			<key>hash2</key>
 			<data>
-			VUdNUyh+HHwKrDp0fRNE4WHQ1ja/aew2MtJU8chfuUg=
+			me1h4aMwBgSpQ5JB29aRGOYCKFrJyszXwCqi4UHdZfo=
 			</data>
 		</dict>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			81TIQ7qpkKPhR4S5EXr9ChwD12w=
+			M/ut8uBLaouNOqvfX9bBWGrFfEI=
 			</data>
 			<key>hash2</key>
 			<data>
-			3wFheuiOYKft8KqTaYac+GQ5ouK9TqKK+T+TCRVQR7Q=
+			INueE3JgCUX6G7rEkvdz5CYgxD1KJZYH5oiKwssaiZQ=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

@@ -124,6 +124,7 @@ SWIFT_CLASS("_TtC9MogeanSDK6Mogean")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager monitoringDidFailForRegion:(CLRegion * _Nullable)region withError:(NSError * _Nonnull)error;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons inRegion:(CLBeaconRegion * _Nonnull)region;
 - (void)setCustomEvent:(NSString * _Nonnull)eventType;
+- (NSString * _Nonnull)getDate;
 @end
 
 
