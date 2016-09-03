@@ -1,8 +1,11 @@
 MogeanSDK Installation Instructions - iOS
 If you are using CocoaPods (or Wish to use CocoaPods for integrating MogeanSDK), Please read Section A, otherwise jump to Section B
 #Section A: Using CocoaPods to Integrate MogeanSDK
-## Step-1: Initiate CocoaPods 
+## Step-1: Initiate CocoaPods
+```
 $ pod init
+```
+
 ## Step-2: Integrate MogeanSDK Pod into Pod file. 
 MogeanSDK is available as a private pod. Open your Podfile and add the following Sources 
 
@@ -10,6 +13,8 @@ MogeanSDK is available as a private pod. Open your Podfile and add the following
 	source 'https://github.com/mogean/MogeanSDKPodSpec'
 
 Add Target MogeanSDK and your podfile will look something like this: 
+
+	use_frameworks!
 
 	target 'AppTargetName' 
 	do 
@@ -77,7 +82,48 @@ In your info.plist file, be sure to add key "NSLocationAlwaysUsageDescription" a
 
 You are ready to use Your MogeanSDK Now. 
 
-# Section - E: Submitting to App Store
+# Section - E: Removing Unneeded Architectures Before Submitting Archive to iTunesConnect
+
+The MogeanSDK is an embedded dynamic framework so the single framework contains the architectures requried to run the functionality on devices as well as the simulator. The simulator architectures need to be removed when submitting to iTunesConnect.
+
+Within your Target then in Build Phases below Embed Frameworks, where you see MogeanSDK.framework listed, add in a Run Script section.
+
+Make sure the Shell is set to: ```/bin/sh```
+
+Add the following script:
+
+```
+	APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+	# This script loops through the frameworks embedded in the application and
+	# removes unused architectures.
+	find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+	do
+	FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+	FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+	echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+	EXTRACTED_ARCHS=()
+
+	for ARCH in $ARCHS
+	do
+	echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+	lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+	EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+	done
+	
+	echo "Merging extracted architectures: ${ARCHS}"
+	lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+	rm "${EXTRACTED_ARCHS[@]}"
+	
+	echo "Replacing original executable with thinned version"
+	rm "$FRAMEWORK_EXECUTABLE_PATH"
+	mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+	
+	done
+```
+
+# Section - F: Submitting to App Store
 
 The MogeanSDK utilizes iOS Advertising Identifier (IDFA). During the App Store submission process you will need to answer "Yes" to this question. The MogeanSDK does comply with the usage limitations of the Advertising Identifier and the Limit Ad Tracking setting.
 
