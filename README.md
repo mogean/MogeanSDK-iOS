@@ -28,8 +28,12 @@ Add Target MogeanSDK and your podfile will look something like this:
 MogeanSDK is now integrated in your App. Make sure you close your XCode and reopen the project using .xcworkspace
 
 #Section - B: Without using CocoaPod
+
 Step-1: Clone this repository into your local system. 
+
 Step-2: Drag and Drop MogeanSDK.framework into your workspace.
+
+The recommended approach is to setup the framework in your Build Settings under Linked Frameworks and Libraries. If you include the framework under Embedded Binaries you may need to remove unneeded architectures when submitting your archive. If you see this error when submitting your archive see section "Removing Unneeded Architectures Before Submitting Archive to iTunesConnect"
 
 
 #Section - C: Using MogeanSDK
