@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		aw43jB3QE3d3kZqCzTUVHVOPhBo=
+		ejU+Z4UZA/1aEIPxq8C89ijGUEc=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		TJwcb5MKh89phCx2eOA0IG1jcRk=
+		dFbCX9FpDQ5VSqGm210y/c3mYyI=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		mn6xzDCdo0SlY3cmcJqtute+kRI=
+		C93mvk+ItP0CKUPEzav+QtFXBh8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -76,11 +76,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			TJwcb5MKh89phCx2eOA0IG1jcRk=
+			dFbCX9FpDQ5VSqGm210y/c3mYyI=
 			</data>
 			<key>hash2</key>
 			<data>
-			vCgKj3VtJVltJsSxrNO3R85cfwRWH7owcJ6+y/Ub7uc=
+			f3EVg72SLSt90UtRqpQhBzeptJChfemXAMzF7Iu+WAc=
 			</data>
 		</dict>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
@@ -98,11 +98,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mn6xzDCdo0SlY3cmcJqtute+kRI=
+			C93mvk+ItP0CKUPEzav+QtFXBh8=
 			</data>
 			<key>hash2</key>
 			<data>
-			LUd+7Y6wzD9U23GbpEwPgR6bfIP4AZxg9EA0Q8eqKkY=
+			TVBm4YndcpWf9U3Ihn98Gfq8QRnRf/fNm0z0S0J8/hA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

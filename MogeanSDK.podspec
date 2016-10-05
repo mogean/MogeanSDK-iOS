@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "MogeanSDK"
-s.version      = "0.0.17"
+s.version      = "0.0.18"
 s.summary      = "Understand your users based on physical cookies. Leverage our network of beacons and sensors"
 
 
