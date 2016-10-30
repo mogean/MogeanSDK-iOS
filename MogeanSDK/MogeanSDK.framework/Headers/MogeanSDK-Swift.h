@@ -95,6 +95,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import CoreLocation;
 @import Foundation;
+@import SystemConfiguration;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -123,20 +124,51 @@ SWIFT_CLASS("_TtC9MogeanSDK6Mogean")
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager monitoringDidFailForRegion:(CLRegion * _Nullable)region withError:(NSError * _Nonnull)error;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons inRegion:(CLBeaconRegion * _Nonnull)region;
+- (void)setContinuousRanging:(BOOL)continuousRanging;
 - (void)setCustomEvent:(NSString * _Nonnull)eventType;
 - (NSString * _Nonnull)getDate;
 @end
 
+enum MogeanLogTypes : NSInteger;
 
 SWIFT_PROTOCOL("_TtP9MogeanSDK14MogeanDelegate_")
 @protocol MogeanDelegate
 - (void)didUpdateLocation:(CLLocation * _Nonnull)location;
 @optional
-- (void)debugMessage:(NSString * _Nonnull)message;
+- (void)debugMessage:(NSString * _Nonnull)message logLevel:(enum MogeanLogTypes)logLevel;
 @end
+
+typedef SWIFT_ENUM(NSInteger, MogeanLogTypes) {
+  MogeanLogTypesCritical = 0,
+  MogeanLogTypesLifeCycle = 1,
+  MogeanLogTypesApiCalls = 2,
+  MogeanLogTypesGeoFlow = 3,
+  MogeanLogTypesBeaconFlow = 4,
+};
 
 
 @interface NSNumber (SWIFT_EXTENSION(MogeanSDK))
+@end
+
+@class NSNotificationCenter;
+
+SWIFT_CLASS("_TtC9MogeanSDK12Reachability")
+@interface Reachability : NSObject
+@property (nonatomic, copy) void (^ _Nullable whenReachable)(Reachability * _Nonnull);
+@property (nonatomic, copy) void (^ _Nullable whenUnreachable)(Reachability * _Nonnull);
+@property (nonatomic) BOOL reachableOnWWAN;
+@property (nonatomic, strong) NSNotificationCenter * _Nonnull notificationCenter;
+@property (nonatomic, readonly, copy) NSString * _Nonnull currentReachabilityString;
+- (nonnull instancetype)initWithReachabilityRef:(SCNetworkReachabilityRef _Nonnull)reachabilityRef OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithHostname:(NSString * _Nonnull)hostname error:(NSError * _Nullable * _Null_unspecified)error;
++ (Reachability * _Nullable)reachabilityForInternetConnectionAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
++ (Reachability * _Nullable)reachabilityForLocalWiFiAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (BOOL)startNotifierAndReturnError:(NSError * _Nullable * _Null_unspecified)error;
+- (void)stopNotifier;
+- (BOOL)isReachable;
+- (BOOL)isReachableViaWWAN;
+- (BOOL)isReachableViaWiFi;
+@property (nonatomic, readonly, copy) NSString * _Nonnull description;
 @end
 
 #pragma clang diagnostic pop
