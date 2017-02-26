@@ -92,6 +92,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 # endif
 #endif
 #if defined(__has_feature) && __has_feature(modules)
+@import CoreData;
 @import ObjectiveC;
 @import CoreLocation;
 @import Foundation;
@@ -100,7 +101,59 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS_NAMED("BeaconEntry")
+@interface BeaconEntry : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSData;
+
+@interface BeaconEntry (SWIFT_EXTENSION(MogeanSDK))
+@property (nonatomic, copy) NSString * _Nullable beaconUDID;
+@property (nonatomic) BOOL exitPairProcessed;
+@property (nonatomic) BOOL exitRegionProcessed;
+@property (nonatomic, copy) NSString * _Nullable identifier;
+@property (nonatomic, strong) NSData * _Nullable parameters;
+@property (nonatomic, copy) NSString * _Nullable regionIdentifier;
+@end
+
+
+SWIFT_CLASS_NAMED("BeaconExit")
+@interface BeaconExit : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface BeaconExit (SWIFT_EXTENSION(MogeanSDK))
+@property (nonatomic, copy) NSString * _Nullable beaconUDID;
+@property (nonatomic) BOOL exitPairProcessed;
+@property (nonatomic) BOOL exitRegionProcessed;
+@property (nonatomic, copy) NSString * _Nullable identifier;
+@property (nonatomic, strong) NSData * _Nullable parameters;
+@property (nonatomic, copy) NSString * _Nullable regionIdentifier;
+@end
+
+
+SWIFT_CLASS_NAMED("BeaconExitRegion")
+@interface BeaconExitRegion : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface BeaconExitRegion (SWIFT_EXTENSION(MogeanSDK))
+@property (nonatomic, copy) NSString * _Nullable beaconUDID;
+@property (nonatomic) BOOL exitPairProcessed;
+@property (nonatomic) BOOL exitRegionProcessed;
+@property (nonatomic, copy) NSString * _Nullable identifier;
+@property (nonatomic, strong) NSData * _Nullable parameters;
+@property (nonatomic, copy) NSString * _Nullable regionIdentifier;
+@end
+
 @protocol MogeanDelegate;
+@protocol UIApplicationDelegate;
 @class CLLocationManager;
 @class CLLocation;
 @class CLRegion;
@@ -115,6 +168,8 @@ SWIFT_CLASS("_TtC9MogeanSDK6Mogean")
 @property (nonatomic, copy) NSString * _Nullable peelID;
 @property (nonatomic, copy) NSString * _Nullable mogeanConsumerKey;
 @property (nonatomic, copy) NSString * _Nullable mogeanConsumerSecret;
+@property (nonatomic, strong) id <UIApplicationDelegate> _Nullable appDelegate;
+- (NSString * _Nonnull)getStackCounts;
 - (NSString * _Nullable)getAdvertisingIdentifier;
 - (NSArray * _Nonnull)getKnownBeacons;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
@@ -127,6 +182,7 @@ SWIFT_CLASS("_TtC9MogeanSDK6Mogean")
 - (void)setContinuousRanging:(BOOL)continuousRanging;
 - (void)setCustomEvent:(NSString * _Nonnull)eventType;
 - (NSString * _Nonnull)getDate;
+- (NSString * _Nonnull)calculateDwellTime:(NSString * _Nonnull)enterTime;
 @end
 
 enum MogeanLogTypes : NSInteger;

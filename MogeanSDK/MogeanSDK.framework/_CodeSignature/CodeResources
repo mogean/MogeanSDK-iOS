@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/MogeanSDK-Swift.h</key>
 		<data>
-		2KpC6kG1z0jVM7ceKYqHY+JjCkQ=
+		0vpwAiYaplCklSrvCltayDQnnZs=
 		</data>
 		<key>Headers/MogeanSDK.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C/ze4VCo266TEWPBvxrR0sVSUIk=
+		5lQzOIDGtWg8c+PO00S2OIhv7u0=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftdoc</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm.swiftmodule</key>
 		<data>
-		ipVtrO6x7GwidDQi6mz1Dk7RDus=
+		SVa610TO1cKdDRhxSV4OdN8G6Ls=
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -30,11 +30,19 @@
 		</data>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		o/aEO66hq8AWm/etIlwyoFUdKqk=
+		CnfJFTPzWN/tbVURqA4gRWrk7X8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		UH51BJMhbS6dii/XkTAzJxGBEaE=
+		</data>
+		<key>MogeanBeaconStackModel.momd/MogeanBeaconStackModel.mom</key>
+		<data>
+		pM8eEK7PbURiYGaWeVH5Z7XWLNI=
+		</data>
+		<key>MogeanBeaconStackModel.momd/VersionInfo.plist</key>
+		<data>
+		t/SDCfBwBng+Gou5b9rvUcvhuP0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2KpC6kG1z0jVM7ceKYqHY+JjCkQ=
+			0vpwAiYaplCklSrvCltayDQnnZs=
 			</data>
 			<key>hash2</key>
 			<data>
-			e0ofYkswedYz4AqcGYTyq+2EvnMH6cok+icrklcy10U=
+			9/UBW68sCDGRNA7PbLCbnm1g9W4g663C5HjtAEo/koU=
 			</data>
 		</dict>
 		<key>Headers/MogeanSDK.h</key>
@@ -76,11 +84,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ipVtrO6x7GwidDQi6mz1Dk7RDus=
+			SVa610TO1cKdDRhxSV4OdN8G6Ls=
 			</data>
 			<key>hash2</key>
 			<data>
-			n1KVj+YS98oLlG2kUuBMiBQavtw/xBJ5rEr8ttSXpXQ=
+			dx0zdLn99obCKvCioMqsqdevQEa3LbYaDjxwTx33pUg=
 			</data>
 		</dict>
 		<key>Modules/MogeanSDK.swiftmodule/arm64.swiftdoc</key>
@@ -98,11 +106,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			o/aEO66hq8AWm/etIlwyoFUdKqk=
+			CnfJFTPzWN/tbVURqA4gRWrk7X8=
 			</data>
 			<key>hash2</key>
 			<data>
-			tVYk7U4XVqgLg/DFjgnzYJq4wwuj7bqNdDdj0Hm3WEs=
+			5deBijhik4W5AEJicKsjEuH1jRk1ihuCNcUb+tE+7c4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -114,6 +122,28 @@
 			<key>hash2</key>
 			<data>
 			WehVJTFvuw8sD+VyampwSR9NMxSUxRnRCvKejsdTveE=
+			</data>
+		</dict>
+		<key>MogeanBeaconStackModel.momd/MogeanBeaconStackModel.mom</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			pM8eEK7PbURiYGaWeVH5Z7XWLNI=
+			</data>
+			<key>hash2</key>
+			<data>
+			Aj3bsGDjOZ0AxCp6J2TiG62BHQHbn6b2dOlMWkYGiyI=
+			</data>
+		</dict>
+		<key>MogeanBeaconStackModel.momd/VersionInfo.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			t/SDCfBwBng+Gou5b9rvUcvhuP0=
+			</data>
+			<key>hash2</key>
+			<data>
+			WraOxKkZCKONHKNeQRhhV1DtHOfuG9+C426rh0ykBN4=
 			</data>
 		</dict>
 	</dict>
