@@ -88,7 +88,9 @@ In your info.plist file, be sure to add key "NSLocationAlwaysUsageDescription" a
 
 You are ready to use Your MogeanSDK Now. 
 
-# Section - E: Removing Unneeded Architectures Before Submitting Archive to iTunesConnect
+# Section - E: Bitcode - Removing Unneeded Architectures Before Submitting Archive to iTunesConnect
+
+The MogeanSDK currently does not have bitcode enabled. Please disable this before submitting to the App Store. If you require bitcode, please reach out to us at info@mogean.com.
 
 The MogeanSDK is an embedded dynamic framework so the single framework contains the architectures requried to run the functionality on devices as well as the simulator. The simulator architectures need to be removed when submitting to iTunesConnect.
 
