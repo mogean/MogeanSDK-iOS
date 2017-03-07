@@ -80,6 +80,8 @@ In your AppDelegate.m
 	mogean.peelID = @"<Your MogeanID Issued by Mogean>";
 	mogean.mogeanConsumerKey=@"<Your Mogean Consumer Key Issued by Mogean>";
 
+In your Target "Build Settings", find "Build Options" and set "Embedded Content Contains Swift Code" to YES. 
+
 # Section - D: Location Authorization Instructions
 
 In your info.plist file, be sure to add key "NSLocationAlwaysUsageDescription" and give a proper message string description for your users when requesting for Location Always Usage authorization.
