@@ -145,3 +145,17 @@ Note: the above setting should not be selected based on the MogeanSDK functional
 	SELECT - Attribute an action taken within this app to a previously served advertisement
 
 You will then SELECT the final checkbox about the Limit Ad Tracking setting in iOS. The MogeanSDK does monitor this setting by the end user and is taken into account during data processing and delivery to ensure compliance.
+
+# Section - G: Using Digital Element to get Location of your phone
+
+The MogeanSDK integrates with Digital Element to accurately define your location and fetch your location parameters. In order to get Location Data from Digital Element, you have to implement MogeanDelegate interface and implement the function: 
+	
+	dataElementsLocationUpdate(elements:[String: String]). 
+
+Elements will contain a JSON object with all the location attributes. 
+
+To initiate, just call         
+
+	mogeanSharedInstance.geoLocateUserUsingDataElements()
+
+
